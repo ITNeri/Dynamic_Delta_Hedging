@@ -77,8 +77,33 @@ xxxx
   
 #### Method 2: real data
 `<import hedging_real_data>`  
-xxx
+Delta will be hedged when the the variation of the stock price is greater or less than `sigma / 16`  
+First, we select the closing price of HC2110 in every 30 minutes from July 2, 2021 to July 29, 2021  `HC2110.xls`
 
+The following are parameters:
+```
+Suppose expiration time is on July 29, 2021.  
+r = risk-less short rate = 0.03
+sig = volatility of stock value = 0.21
+Suppose we bought 100 numbers of call option
+```
+
+The results are as follows:
+```
+        s  s (prior)     k        ds       value     delta        underlying_position    position (prior)            time              PoL  				
+0  5402.0        0.0  5402  0.000000  151.749074  0.533275   			-53.0            0.0        2021-7-2   09:30:00        0.0  				
+1  5580.0     5402.0  5402  0.015653  249.045541  0.716173   			-72.0          -53.0        2021-7-6   09:30:00    -9434.0  				
+2  5883.0     5580.0  5402  0.015186  489.418648  0.940885   		        -94.0          -72.0        2021-7-12  09:30:00   -21816.0  				
+3  5955.0     5883.0  5402  0.014999  556.160107  0.969373   		   	-97.0          -94.0        2021-7-14  09:30:00    -6768.0  				
+4  5895.0     5955.0  5402 -0.015531  496.853432  0.963866   			-96.0          -97.0        2021-7-16  13:45:00     5820.0  				
+5  5909.0     5895.0  5402  0.013377  507.197840  0.991441   			-99.0          -96.0        2021-7-22  14:15:00    -1344.0  				
+6  5974.0     5909.0  5402 -0.014517  571.704391  0.999868   		       -100.0          -99.0        2021-7-26  13:45:00    -6435.0  				
+
+--------------------------------------------------------------------------------------------------------------------------------------
+profit in options market is 41995 
+profit in stock market is -39977 
+the final profit is 2018 
+```
   
 ## Maintainer
 @ITNeri
