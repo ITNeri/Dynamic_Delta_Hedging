@@ -3,8 +3,8 @@ from delta_hedging_mc import EuropeanCallOption, EuropeanPutOption
 import pandas as pd
 
 '''
-HC2110 2021-7-26到2021-7-29日每30分钟的实际数据
-到期时间 7-31 0点
+The closing price of HC2110 in every 30 minutes from July 2, 2021 to July 29, 2021
+Expiration time： 29 July 2021
 '''
 
 # import the real data (this part may be varied in the different cases)
