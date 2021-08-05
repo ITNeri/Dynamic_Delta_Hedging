@@ -5,7 +5,7 @@ Hedging options by using Monte Carlo simulations or real data
 - Background
 - Install
 - Usage
-- Example and Results
+- Example and Outcome
 - Maintainer
 - License
 
@@ -22,21 +22,22 @@ xxx
 ## Usage
 xxx
 
-## Example and Results
-### daily delta hedging when market close  
+## Example and Outcome
+### Daily delta hedging when market close
 `<import delta_hedging_mc>`  
-
-
+  
 Suppose we buy 100 numbers of call option. The parameters are as follows:  
 ```
 strike price = 100; initial stock price = 100; time to maturity = 20/250 = 0.08;
 risk-less short rate = 0.03; volatility of stock value = 0.2
 the number of path nodes = 20； the number of simulations = 100000
 ```
-
-Then one price path can be simulated based on Monte Carlo method:
-![Image text]
-
+  
+  
+Then one price path can be simulated based on Monte Carlo method:  
+![Image text](https://raw.githubusercontent.com/ITNeri/Dynamic_Delta_Hedging/main/img_save/stock_path.png)
+  
+  
 Following this price path, the result about daily delta hedging when market close are as follows:
 ```
              s    k     value     delta  underlying_position  PoL_in_stock
@@ -61,16 +62,24 @@ Following this price path, the result about daily delta hedging when market clos
 18   95.925056  100  0.005943  0.010631                 -1.0      1.008369
 19   96.892785  100  0.002529  0.006576                 -1.0     -0.967729
 ```
+  
+  
+Repeating this process 100000 times and then calcultaing profit each time, we can get returns best fit distribution. It is a normal distribution centered on 0.  
+![Image text](https://raw.githubusercontent.com/ITNeri/Dynamic_Delta_Hedging/main/img_save/hedging_stock_path.png)
 
-Repeating this process 100000 times, we can get returns best fit distribution. It is a normal distribution centered on 0.
-![Image text]
 
 
+### Delta hedging based on changes in stock price
+#### Method 1: Monte Carlo Method
+`<import hedging_based_s>`  
+xxxx
 
-### delta hedging based on changes in stock price
+  
+#### Method 2: real data
 `<import hedging_real_data>`  
 xxx
 
+  
 ## Maintainer
 @ITNeri
 
