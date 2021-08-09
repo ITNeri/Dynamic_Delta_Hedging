@@ -17,11 +17,33 @@ Hedging options by using Monte Carlo simulations or real data
 3. 
 
 ## Install
-xxx
+Python 3.X should be installed on your machine.  
 
 ## Usage
-xxx
-
+- Import different files to run the code.   
+  - `<import delta_hedging_mc>`  
+    - Daily delta hedging when market close
+    - stock price: Monte Carlo Simulation
+  - `<import hedging_based_s>`  
+    - Delta hedging based on changes in stock price
+    - stock price: Monte Carlo Simulation
+  - `<import hedging_real_data>`  
+    - Delta hedging based on changes in stock price
+    - stock price: real price
+- The parameters:  
+```
+k = strike price  
+s0 = initial stock price  
+dt = t/T = time to maturity  
+rf = remaining time  
+r = risk-less short rate  
+sig = volatility of stock value  
+m = the number of path nodes  
+n = the number of simulations  
+name: "c"=call, "p"=put
+towards: buy=1, sell=-1
+number = the number of contract
+```
 ## Example and Outcome
 ### Daily delta hedging when market close
 `<import delta_hedging_mc>`  
