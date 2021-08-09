@@ -4,8 +4,8 @@ Hedging options by using Monte Carlo simulations or real data
 ## Table of Contents
 - [Background](#background)
 - [Install](#install)
-- [Usage](##usage)
-- [Example and Outcome](#exampleandoutcome)
+- [Usage](#usage)
+- [Example and Outcome](#example-and-outcome)
 - [Maintainer](#maintainer)
 - [License](#license)
 
