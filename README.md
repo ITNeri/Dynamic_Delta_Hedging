@@ -2,25 +2,22 @@
 Hedging options by using Monte Carlo simulations or real data  
 
 ## Table of Contents
-- Background
-- Install
-- Usage
-- Example and Outcome
-- Maintainer
-- License
+- [Background](##background)
+- [Install](##install)
+- [Usage](##usage)
+- [Example and Outcome](##exampleandoutcome)
+- [Maintainer](##maintainer)
+- [License](##license)
 
 
 ## Background
-1. xxx
-    1. xxxx  
-2. xxxx  
-3. 
+After inputting the parameters (e.g. r, sig(vol), dt), this project can give users the results of dynamic delta hedging. The dynamic stock price can come from Monte Carlo Simulation or real data.
 
 ## Install
 Python 3.X should be installed on your machine.  
 
 ## Usage
-- Import different files to run the code.   
+- Import different files to run the code：   
   - `<import delta_hedging_mc>`  
     - Daily delta hedging when market close
     - stock price: Monte Carlo Simulation
