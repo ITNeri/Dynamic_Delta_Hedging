@@ -128,4 +128,4 @@ the final profit is 2018
 @ITNeri
 
 ## License
-[MIT](https://github.com/ITNeri/Dynamic_Delta_Hedging/blob/main/others/license.txt)
+[MIT](https://github.com/ITNeri/Dynamic_Delta_Hedging/blob/main/license.txt)
