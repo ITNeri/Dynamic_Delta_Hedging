@@ -89,12 +89,7 @@ Repeating this process 100000 times and then calcultaing profit each time, we ca
 
 
 ### Delta hedging based on changes in stock price
-#### Method 1: Monte Carlo Method
-`<import hedging_based_s>`  
-xxxx
 
-  
-#### Method 2: real data
 `<import hedging_real_data>`  
 Delta will be hedged when the the variation of the stock price is greater or less than `sigma / 16`  
 First, we select the closing price of HC2110 in every 30 minutes from July 2, 2021 to July 29, 2021  `HC2110.xls`
